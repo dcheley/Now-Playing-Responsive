@@ -53,3 +53,35 @@
   display: block;
   margin-top: 0.5em;
 }
+
+@media (min-width: 768px) {
+  .site-nav {
+    position: fixed;
+    width: 10%;
+    height: 87%;
+    margin: 0;
+    background-color: lightgrey;
+    z-index: 2;
+  }
+
+  .site-logo {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    background-color: lightgrey;
+    width: 10%;
+  }
+
+  .site-nav-item {
+    padding: 1em;
+    clear: both;
+    padding-left: 10px;
+    width: 10%;
+
+  }
+
+  .fa {
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+}

@@ -51,3 +51,15 @@
   font-size: 2em;
   line-height: 1.1;
 }
+
+@media (min-width: 768px) {
+  .movie-overview {
+    display: inline;
+  }
+
+  .movie {
+    width: 90%;
+    margin: auto;
+    margin-right: 0;
+  }
+}

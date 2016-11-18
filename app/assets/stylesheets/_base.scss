@@ -19,7 +19,7 @@ body {
   padding-bottom: $nav-bar-height;
 }
 
-// This rule ensure that all images always fit in their container
+// This rule ensures that all images always fit in their container
 //   but are never stretched beyond their native resolution
 img {
   max-width: 100%;
@@ -28,4 +28,8 @@ img {
 figure {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  
 }

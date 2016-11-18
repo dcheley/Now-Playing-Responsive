@@ -27,3 +27,19 @@
     margin: 0;
   }
 }
+
+@media (min-width: 768px) {
+  .footer-nav {
+    float: left;
+    background-color: white;
+    width: 40%;
+    padding-left: 15%;
+    padding-right: 0;
+  }
+
+  .about {
+    float: right;
+    color: white;
+    width: 50%;
+  }
+}
