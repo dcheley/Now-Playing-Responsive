@@ -52,14 +52,44 @@
   line-height: 1.1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .movie-overview {
-    display: inline;
+    display: block;
   }
 
   .movie {
     width: 90%;
     margin: auto;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie {
+    float: left;
+    left: 10%;
+    width: 30.3333%;
+    .movie-backdrop {
+      display: none;
+    }
+    .movie-poster {
+      display: block;
+    }
+  }
+
+  .movie:first-child {
+    position: relative;
+    width: 90%;
+    float: left;
+    left: 10%;
+    .movie-overview {
+      display: block;
+    }
+    .movie-backdrop {
+      display: block;
+    }
+    .movie-poster {
+      display: none;
+    }
   }
 }
