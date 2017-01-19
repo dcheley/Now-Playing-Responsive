@@ -6,4 +6,4 @@ This is a simple app that pulls the most popular movies currently playing in cin
 1. "bundle install"
 2. "rails s"
 4. Visit `http://localhost:3000` to see the starting layout.
-5. User browser tools to resize window and view the responsive design (four differt screen settings)!
+5. Use browser tools to resize window and view the responsive design (four differt screen settings)!
