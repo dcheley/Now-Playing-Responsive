@@ -1,0 +1,266 @@
+/* line 1, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_base.scss */
+html {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #333;
+}
+
+/* line 8, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_base.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 14, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_base.scss */
+body {
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+/* line 24, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 28, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_base.scss */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 34, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_base.scss */
+  body {
+    padding-bottom: 0px;
+  }
+}
+/* line 1, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  z-index: 100;
+}
+
+/* line 11, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+/* line 21, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-nav-list,
+.footer-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 28, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-nav-item {
+  float: left;
+  width: 20%;
+  height: 60px;
+  padding: 0.75em;
+  font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 41, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-nav-item > .fa {
+  font-size: 1.75rem;
+}
+/* line 45, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-nav-item:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 52, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+.site-nav-item-label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 768px) {
+  /* line 58, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+  .site-logo {
+    display: none;
+  }
+
+  /* line 62, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+  .site-nav {
+    width: 10%;
+    height: 100%;
+    background-color: lightgrey;
+  }
+
+  /* line 68, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+  .site-nav-item {
+    width: 100%;
+  }
+
+  /* line 72, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_nav.scss */
+  .site-nav-list:first-child:before {
+    content: url(logo.svg);
+  }
+}
+/* line 1, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie {
+  position: relative;
+}
+
+/* line 5, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie-poster,
+.movie-backdrop {
+  display: block;
+}
+
+/* line 12, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie-poster {
+  display: none;
+}
+
+/* line 16, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 1em;
+  color: #fff;
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+/* line 36, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie-overview {
+  display: none;
+}
+
+/* line 40, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie-title-label {
+  font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.7em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: gold;
+  margin: 0;
+}
+
+/* line 49, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+.movie-title {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 56, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie-overview {
+    display: block;
+  }
+
+  /* line 60, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie {
+    width: 90%;
+    margin: auto;
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 70, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie {
+    float: left;
+    left: 10%;
+    width: 30.3333%;
+  }
+  /* line 74, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie .movie-backdrop {
+    display: none;
+  }
+  /* line 77, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie .movie-poster {
+    display: block;
+  }
+
+  /* line 82, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie:first-child {
+    position: relative;
+    width: 90%;
+    float: left;
+    left: 10%;
+  }
+  /* line 87, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie:first-child .movie-overview {
+    display: block;
+  }
+  /* line 90, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie:first-child .movie-backdrop {
+    display: block;
+  }
+  /* line 93, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_movies.scss */
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+}
+/* line 1, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+.site-footer {
+  text-align: center;
+}
+
+/* line 5, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+.footer-nav {
+  padding: 1em;
+}
+
+/* line 9, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+.footer-nav-item {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+/* line 16, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+.footer-nav-item:last-child {
+  margin-right: 0;
+}
+
+/* line 21, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+.about {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+/* line 26, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+.about > p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 32, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+  .footer-nav {
+    float: left;
+    background-color: white;
+    width: 40%;
+    padding-left: 15%;
+    padding-right: 0;
+  }
+
+  /* line 40, /home/dcheley/Desktop/projX/Now-Playing-Responsive/app/assets/stylesheets/_footer.scss */
+  .about {
+    float: right;
+    color: white;
+    width: 50%;
+  }
+}
